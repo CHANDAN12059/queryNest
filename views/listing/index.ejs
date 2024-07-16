@@ -1,0 +1,42 @@
+<% layout("/layout/boilerplate.ejs")%>
+<body>
+    
+
+<%for(listing of listings){%>
+      
+
+
+    <div class="card">
+        <div class="card-body">
+          <p class="card-text"><i>@<%=listing.username%></i></p>
+          <p class="card-text"><b>comments:</b> <%=listing.comments%></p>
+
+
+
+
+<%if(currUser &&currUser._id.equals(listing.owner._id)){%>
+
+  <div class="btns">
+    <form method="get" action="/edit/<%=listing._id%>">
+        <button class="btn btn-outline-primary">Edit</button>
+      </form>
+      <form method="post" action="/delete/<%=listing._id%>?_method=DELETE">
+        <button class="btn btn-outline-danger">Delete</button>
+      </form>
+  </div>
+<%}%>
+    
+       
+        </div>
+      </div>
+    
+<br>    
+
+<%}%>
+
+
+
+
+
+
+</body>

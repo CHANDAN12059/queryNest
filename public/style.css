@@ -1,0 +1,27 @@
+
+.card{
+    background-color: #F8EDE3;
+
+}
+.container{
+    margin: 0;
+    margin-top: 2rem;
+}
+.form{
+    margin-top: 4rem;
+}
+.logo{
+    font-size:x-large;
+    font-weight: 600;
+    color: #640D6B;
+}
+i{
+    font-size:larger;
+    margin-right: 1rem;
+}
+.btns{
+    display: flex;
+}
+.btns button{
+    margin-right: 2rem;
+}

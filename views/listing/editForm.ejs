@@ -1,0 +1,37 @@
+<%layout("/layout/boilerplate") %>
+<body>
+<form method="post" action="/edit/<%=listing._id%>?_method=PATCH" novalidate class="needs-validation">
+
+<div class="row form">
+    <div class="col-8 offset-2">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text"   readonly class="form-control-plaintext"  class="form-control" id="exampleFormControlInput1" name="username" value="<%=currUser.username%>" required >
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comments" placeholder="<%=listing.comments%>" required></textarea>
+          </div>
+          <button  class="btn btn-outline-success">Save Changes</button>
+
+    </div>
+</div>
+
+
+   
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
